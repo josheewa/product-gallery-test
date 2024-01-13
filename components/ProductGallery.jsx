@@ -26,7 +26,6 @@ const ProductGallery = ({ startingImagePublicId, tag }) => {
 
   // Function to get filtered media assets based on startingImagePublicId and tag
   const getMediaAssets = async (startingImagePublicId, tag) => {
-
     try {
       // Fetch data from the Cloudinary JSON API
       const response = await fetch(`https://res.cloudinary.com/ddaymbzcc/image/list/${tag}.json`)
